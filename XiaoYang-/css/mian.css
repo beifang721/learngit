@@ -1,0 +1,112 @@
+html,body { width:100%;height:100%;}
+.loading-wrap { width:100%;height: 100%;background-color: #000000;opacity: 0.9;position: relative;display: none;}
+.loading { width:10.0rem;height:10.0rem;background-color:#FF0000;font-size:4.0rem;line-height: 10.0rem;text-align: center;border-radius: 50%;position: absolute;top: 50%;left: 50%;margin:-5.0rem 0px 0px -5.0rem;-webkit-animation: loading-rotate 2.5s infinite;-webkit-transform-style: preserve-3d;}
+@-webkit-keyframes loading-rotate { from{-webkit-transform: rotateY(0deg);}to{-webkit-transform: rotateY(360deg);}}
+/*首页start*/
+.first-page { display:none;position:relative;width:100%;height: 100%;background: url("../img/cover-bg.png") no-repeat 0 0;background-size: 100% 100%;}
+.first-page img { width: 17.3rem;position: absolute;top:83.5%;left: 50%;margin-left: -8.65rem;}
+/*首页end*/
+/*第二页 选择人物start*/
+.second-page { display: none;position: relative;width: 32rem;height: 100%;background:url("../img/choose-bg.png") no-repeat 0 0;background-size: 100% 100%;overflow: hidden;/*display: none;*//*-webkit-transition: all 1s;-moz-transition: all 1s; */}
+.select-person { width: 160rem;height: 48.9%;position: absolute;top: 9.2%;left: 0;display: flex;}
+.img-wp { flex: 1;height: 100%;text-align: center;}
+.img-wp img { height: 100%;width: 50%;}
+.choose-player { width: 32rem;height: 34.5%;position: absolute;bottom: 0;text-align: center;}
+.player-herder { width: 32rem;margin-left: 0.02rem;height: 0.5rem;text-align: center;}
+.player-herder img { width: 5rem;height: 5rem;margin-right:0.5rem; }
+.player-name { width: 32rem;margin-left: 0.2rem;height: 2.0rem;text-align: center;}
+.player-name span { display: inline-block;width: 5.0rem;height: 5.0rem;margin-right:0.5rem;margin-top: 5.0rem; font-size: 1.2rem;color: #888;}
+.player-name .active { color: #f61;}
+/*.btn-wrap{width: 32.0rem;height: 24.63%;position: absolute;bottom: 28.11%;}*/
+.choose-btn { height:25%;width: 40%;margin-top: 5.0rem;}
+/*第二页end*/
+/*第三页  游戏界面*/
+.third-page { /*display:none;*/position: relative;width: 32rem;height: 100%;background:url("../img/bg.png") no-repeat 0 0;background-size: 100% 100%;overflow: hidden;/*display: none;*//*-webkit-transition: all 1s;-moz-transition: all 1s; */}
+.player-score { height: 6.5%;position:absolute;top:5.5%;left:6.3%;z-index: 2;}
+.socre-img { height: 8.8%;position: absolute;top: 10%;left: 4.7%;/*background-color: salmon*/;}
+.player-score img ,.socre-img img ,.now-perone img ,.timer img { height: 100%;}
+.now-perone img { width: 30%;}
+.player-score img { width: 1.8rem;}
+.socre-img img { width: 9.0rem;}
+.timer img { width: 1.6rem;}
+.now-perone{width: 32rem;height: 30%;text-align: center;position: absolute;top: 2.5%;}
+.button-on{width: 8.0rem;height: 13.4%;position: absolute;right: 2.2%;top: 5.3%;}
+.timer { height: 4.4%;position: absolute;top: 22%;left: 4.7%;}
+.gunzi { width: 3.5rem;height: 7.0rem;}
+.xipan { width: 3.5rem;height: 2.0rem;margin-top: -1.0rem;}
+.wuqi-wrap { border: 1px solid #00007F;z-index: 3;position: absolute;width: 3.5rem;/*height: 9.0rem*//*border: 1px solid #00007F;*/top: 20%;left: 31.6%;-webkit-animation: wuqi 3.0s linear infinite;transform-origin: 1.75rem 1.5rem;}
+@-webkit-keyframes wuqi{
+	0%{transform: rotateZ(0deg)}
+	25%{transform: rotateZ(60deg)}
+	50%{transform: rotateZ(0deg)}
+	75%{transform: rotateZ(-60deg)}
+	100%{transform: rotateZ(0deg)}
+}
+.yun-wrap { position: absolute;bottom: 0px;width: 32.0rem;height: 61.0%;}
+.yun1 { width: 9.8rem;background: url("../img/yun7.png") no-repeat 0 0;border: 1px solid #00007F;-webkit-animation: yun1 3.0s linear infinite;-moz-animation: yun 2.4s linear infinite;}
+.yun2 {	width: 8.8rem;background: url("../img/yun6.png") no-repeat 0 0;border: 1px solid #00007F;-webkit-animation: yun2 3.4s linear infinite;}
+.yun3 {	width: 9.4rem;background: url("../img/yun5.png") no-repeat 0 0;border: 1px solid #00007F;-webkit-animation: yun3 2.9s linear infinite;}
+.yun4 {	width: 7.2rem;background: url("../img/yun4.png") no-repeat 0 0;border: 1px solid #00007F;-webkit-animation: yun4 3.1s linear infinite;}
+.yun5 {	width: 10.0rem;background: url("../img/yun3.png") no-repeat 0 0;border: 1px solid #00007F;-webkit-animation: yun5 2.7s linear infinite;}
+.yun6 {	width: 9.4rem;background: url("../img/yun2.png") no-repeat 0 0;border: 1px solid #00007F;-webkit-animation: yun3 1.9s linear infinite;}
+.yun7 {	width: 7.2rem;background: url("../img/yun1.png") no-repeat 0 0;border: 1px solid #00007F;-webkit-animation: yun4 1.4s linear infinite;}
+@-webkit-keyframes yun1{
+	0%{transform: translateX(0.0rem);}
+	50%{transform: translateX(22.2rem)}
+	100%{transform: translateX(0.0rem)}
+}
+@-webkit-keyframes yun2{
+	0%{transform: translateX(0.0rem);}
+	50%{transform: translateX(23.2rem)}
+	100%{transform: translateX(0.0rem)}
+}
+@-webkit-keyframes yun3{
+	0%{transform: translateX(0.0rem);}
+	50%{transform: translateX(22.6rem)}
+	100%{transform: translateX(0.0rem)}
+}
+@-webkit-keyframes yun4{
+	0%{transform: translateX(0.0rem);}
+	50%{transform: translateX(24.8rem)}
+	100%{transform: translateX(0.0rem)}
+}
+@-webkit-keyframes yun5{
+	0%{transform: translateX(0.0rem);}
+	50%{transform: translateX(22.0rem)}
+	100%{transform: translateX(0.0rem)}
+}
+.yun7 img { width:4.5rem;height:3.5rem;margin-top: 1.0rem;}
+.yun6 img { width: 5.5rem;height: 5.8rem;}
+.yun5 img { width: 6.5rem;height: 4.8rem;}
+.yun4 img { width: 4.2rem;height:4.8rem;margin-top: 1.0rem;}
+.yun3 img { width: 3.9rem;height: 4.0rem;margin-top: 1.5rem;}
+.yun2 img { width: 7.5rem;height: 4.5rem;}
+.yun1 img { width: 4.8rem;height: 4.8rem;}
+.yun1 ,.yun2 ,.yun3 ,.yun4 ,.yun5 ,.yun6 ,.yun7 { text-align: center;background-size: 100% 80%;background-position-y:100%;height: 6.4rem;margin-top: -1.9rem;}
+.yun1 { margin-top: 0px;}
+/* 第三页 游戏界面end*/
+/* 第四页 游戏结束的界面 弹出分数start*/
+.fourth-page { display: none;width: 32.0rem;height: 100%;;position: absolute;top: 0;background: url("../img/gameover-bg.png") no-repeat 0 0;background-size: 100% 100%;}
+.get-score { height: 4.8rem;position: absolute;top: 34%;right: 7%;}
+.get-score img{ height: 100%;width: 3.0rem;}
+.get-score span { font-size: 3.5rem;color: #0000FF;}
+.fourpage-btn { height: 3.5rem;position: absolute;top:56%;left: 13%;}
+.fourpage-btn img { width: 10.2rem;height: 100%;padding:0 1.0rem;}
+/*第四页 游戏结束的界面 弹出分数end*/
+/*第五页 排行榜的界面 start*/
+.five-page { display: none;width:32.0rem;height:100%;position: relative;background: url("../img/score-bg.png") no-repeat 0 0;background-size:100%;}
+.ranking-list { width: 29.0rem;height:34.0rem;position:absolute;top:14.5rem;left:1.6rem;border: 1px solid #00007F;}
+.ranking-list li { width: 29.0rem;height: 6.2rem;/*background-color:#D0E9C6;*/margin-top: 0.58rem;line-height: 6.2rem;}
+.ranking-list li span { font-size: 1.4rem;color: white;padding:0.0rem 1.0rem;}
+.ranking-list li span:nth-child(4) { margin-left: 9.5rem;}
+.ranking-list li img { width: 4.6rem;height: 4.6rem;vertical-align:middle;margin-top: -0.7rem;}
+.fivepage-btn { width: 21.8rem;height: 3.3rem;position: absolute;left:16.3%;top:50.2rem;;}
+.fivepage-btn img { width: 10rem;height: 100%;}
+.fivepage-btn img:nth-child(2),.sixpage-btn img:nth-child(2) { float:right;}
+/*第五页 排行榜的界面 end*/
+/*第六页 奖品start*/
+.six-page { display: none;width: 32.0rem;height: 100%;background:url("../img/award-bg.png") no-repeat 0 0;background-size: 100%;position: relative;}
+.sixpage-btn { width: 28.5rem;height: 4.0rem;position: absolute;top: 34.9rem;left: 1.8rem;}
+.sixpage-btn img { width: 13.0rem;height: 100%;}
+
+.chuangjian{ width: 4.6rem;height: 5.5rem;}
